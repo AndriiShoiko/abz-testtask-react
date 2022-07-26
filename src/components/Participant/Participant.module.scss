@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.participant {
+    flex: 1 280px;
+    min-width: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: white;
+
+    img {
+        display: block;
+        width: 70px;
+        height: 70px;
+        /*margin-bottom: 20px;*/
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 26px;
+        color: $base-text-color;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        color: $base-text-color;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .mail {
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px;
+        color: $base-text-color;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

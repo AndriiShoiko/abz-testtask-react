@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import './styles/index.scss';
-import './styles/variables.scss';
 import './styles/reset.scss';
+
+import './styles/index.scss';
 
 import App from './App';
 

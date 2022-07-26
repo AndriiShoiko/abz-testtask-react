@@ -1,0 +1,33 @@
+.preview {
+    background: url("../../assets/images/main-bcg.jpg") no-repeat center;
+    width: 100%;
+    min-height: 650px;
+    background-size: cover;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 140px;
+
+    .bcg_text {
+        width: 380px;
+        text-align: center;
+        color: white;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        h1 {
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 21px;
+        }
+
+        h2 {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 32px;
+        }
+    }
+}

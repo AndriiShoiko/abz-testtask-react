@@ -1,0 +1,26 @@
+@import '../../../styles/variables.scss';
+
+.buttonLink {
+    padding: 4px 29px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    background: #F4E041;
+    border-radius: 80px;
+    border: none;
+    vertical-align: middle;
+    text-decoration: none;
+    color: $base-text-color;
+}
+
+.buttonLink:hover,
+.buttonLink:focus {
+    background-color: #FFE302;
+    transition: .3s linear;
+}
+
+.buttonLink:disabled {
+    background-color: #B4B4B4;
+}
