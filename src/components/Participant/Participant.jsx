@@ -5,8 +5,8 @@ import s from './Participant.module.scss';
 const Participant = ({ id, photo, name, position, email, phone }) => {
   return (
     <div className={s.participant}>
-      {/*<PreloaderPhoto />*/}
-      <img src={photo} alt={`participant-{id}`} />
+      <PreloaderPhoto />
+      <img src={photo} alt={name} />
       <h2>{name}</h2>
       <p>{position}</p>
       <p>

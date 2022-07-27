@@ -1,11 +1,11 @@
 import React from 'react';
 import s from './ButtonLink.module.scss';
 
-const ButtonLink = ({ children, href }) => {
+const ButtonLink = ({ children, ...props }) => {
     return (
-        <a href={href} className={s.buttonLink}>
+        <button {...props} className={s.buttonLink}>
             {children}
-        </a>
+        </button>
     )
 }
 
