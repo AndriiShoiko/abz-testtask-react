@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import Preview from './components/Preview/Preview';
 import WorkingWithGetRequest from './components/WorkingWithGetRequest/WorkingWithGetRequest';
+import WorkingWithPostRequest from './components/WorkingWithPostRequest/WorkingWithPostRequest';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <main>
           <Preview />
           <WorkingWithGetRequest />
+          <WorkingWithPostRequest />
         </main>
       </div>
     </div>

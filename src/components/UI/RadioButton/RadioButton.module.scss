@@ -1,0 +1,59 @@
+@import "../../../styles/variables.scss";
+
+.radio_button {
+    position: relative;
+
+    .input {
+        display: none;
+        position: absolute;
+    }
+
+    .label {
+        cursor: pointer;
+        margin-left: 32px;
+    }
+
+    .label:before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+
+        border: 1px solid $base-border-input-color;
+        background-color: $base-background-color;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 4px;
+        left: 0;
+        z-index: 1;
+
+        transition: border 0.1s linear;
+    }
+
+    .label:after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+
+        background-color: #00bdd3;
+        border-radius: 50%;
+        opacity: 0;
+
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        z-index: 2;
+
+        transition: opacity 0.1s linear;
+    }
+
+    .input:checked + .label:before {
+        border-color: #00bdd3;
+    }
+
+    .input:checked + .label:after {
+        opacity: 1;
+    }
+}

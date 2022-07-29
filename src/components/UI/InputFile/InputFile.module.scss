@@ -1,0 +1,64 @@
+@import "../../../styles/variables.scss";
+
+.input_file {
+    position: relative;
+
+    .hidden {
+        display: none;
+    }
+
+    .file {
+        display: inline-block;
+        min-width: 380px;
+        height: 54px;
+        border: 1px solid #d0cfcf;
+        border-radius: 4px;
+        vertical-align: top;
+        padding-left: 99px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+        font-size: 16px;
+        line-height: 26px;
+        color: #7e7e7e;
+
+        cursor: pointer;
+    }
+
+    .file_rect {
+        position: absolute;
+        display: inline-block;
+
+        font-size: 16px;
+        line-height: 26px;
+        color: $base-text-color;
+
+        border: 1px solid $base-text-color;
+        border-radius: 4px 0px 0px 4px;
+
+        width: 83px;
+        height: 54px;
+        padding: 14px 15px;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        vertical-align: middle;
+
+        transition: opacity 0.1s linear;
+        cursor: pointer;
+    }
+
+    .label_prompt {
+        position: absolute;
+
+        font-size: 12px;
+        line-height: 14px;
+        color: $base-helper-text-color;
+
+        z-index: 2;
+
+        bottom: -16px;
+        left: 18px;
+    }
+}
