@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './RadioButton.module.scss';
 
-const RadioButton = ({ ...props }) => {
+const RadioButton = ({register, ...props }) => {
     return (
         <div className={s.radio_button}>
             <input
                 {...props}
+                {...register(props.name)}
                 type="radio"
                 className={s.input}
             />

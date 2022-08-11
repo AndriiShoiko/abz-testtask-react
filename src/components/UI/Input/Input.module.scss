@@ -26,10 +26,6 @@
         color: $base-helper-text-color;
     }
 
-    &:invalid + .label_frame {
-        display: none;
-    }
-
     &[error="true"] {
         border: 2px solid $base-invalid-color;
     }
@@ -71,4 +67,8 @@
     &[error="true"] {
         color: $base-invalid-color;
     }
+}
+
+.display_none {
+    display: none;
 }

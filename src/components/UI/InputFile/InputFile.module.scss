@@ -2,63 +2,89 @@
 
 .input_file {
     position: relative;
+}
 
-    .hidden {
-        display: none;
-    }
+.hidden {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
 
-    .file {
+.file {
+    display: inline-block;
+    min-width: 380px;
+    height: 54px;
+    border: 1px solid #d0cfcf;
+    border-radius: 4px;
+    vertical-align: top;
+    padding-left: 99px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    font-size: 16px;
+    line-height: 26px;
+    color: #7e7e7e;
+
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        height: 100%;
+
         display: inline-block;
-        min-width: 380px;
-        height: 54px;
-        border: 1px solid #d0cfcf;
-        border-radius: 4px;
-        vertical-align: top;
-        padding-left: 99px;
-        padding-top: 14px;
-        padding-bottom: 14px;
-
-        font-size: 16px;
-        line-height: 26px;
-        color: #7e7e7e;
-
-        cursor: pointer;
-    }
-
-    .file_rect {
-        position: absolute;
-        display: inline-block;
-
-        font-size: 16px;
-        line-height: 26px;
-        color: $base-text-color;
-
-        border: 1px solid $base-text-color;
-        border-radius: 4px 0px 0px 4px;
-
-        width: 83px;
-        height: 54px;
-        padding: 14px 15px;
-        top: 0;
-        left: 0;
-        z-index: 2;
-
         vertical-align: middle;
-
-        transition: opacity 0.1s linear;
-        cursor: pointer;
     }
 
-    .label_prompt {
-        position: absolute;
+    &[error="true"] {
+        border: 2px solid $base-invalid-color;
+    }
+}
 
-        font-size: 12px;
-        line-height: 14px;
-        color: $base-helper-text-color;
+.file_rect {
+    position: absolute;
+    display: inline-block;
 
-        z-index: 2;
+    font-size: 16px;
+    line-height: 26px;
+    color: $base-text-color;
 
-        bottom: -16px;
-        left: 18px;
+    border: 1px solid $base-text-color;
+    border-radius: 4px 0px 0px 4px;
+
+    width: 83px;
+    height: 54px;
+    padding: 14px 15px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    vertical-align: middle;
+
+    transition: opacity 0.1s linear;
+    cursor: pointer;
+
+    &[error="true"] {
+        border: 2px solid $base-invalid-color;
+    }
+}
+
+.label_prompt {
+    position: absolute;
+
+    font-size: 12px;
+    line-height: 14px;
+    color: $base-helper-text-color;
+
+    z-index: 2;
+
+    bottom: -16px;
+    left: 18px;
+
+    &[error="true"] {
+        color: $base-invalid-color;
     }
 }
